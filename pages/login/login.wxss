@@ -1,0 +1,55 @@
+/* pages/login/login.wxss */
+.login{
+    margin-top: 40%;
+    text-align: center;
+}
+.login view{
+    position: relative;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+    width: 60%;
+    height: 35px;
+    box-shadow: 0 0 1px 0 #909090;
+    text-align: left;
+}
+.login image{
+    margin: 5px;
+    width: 25px;
+    height: 25px;
+}
+.login .forget{
+    position: absolute;
+    right: 0;
+    bottom: -15px;
+    text-decoration: none;
+}
+.login button{
+    margin:40px auto 0;
+    background: #2342FF;
+    width:30%;
+    height: 40px;
+    color:#fff;
+    line-height: 40px;
+}
+.login text{
+    font-size: 12px;
+    text-decoration: underline;
+    color: #3954FF;
+}
+.other{
+    margin-top: 40px;
+    border-top: 1px solid #f0f0f0;
+    text-align: center;
+}
+.other view{
+    margin:20px 0; 
+    text-align: center;
+    color: #909090;
+    font-size: 14px;
+}
+.other image{
+    margin:0 15px;
+    width:30px;
+    height: 30px;
+}

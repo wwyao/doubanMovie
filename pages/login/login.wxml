@@ -1,0 +1,21 @@
+<view class="container">
+    <form class="login" bindsubmit="submit">
+        <view>
+            <image src="../../img/user.png"/>
+            <input type="text" name="username" class="user"/>
+        </view>
+        <view>
+            <image src="../../img/password.png"/>
+            <input type="text" name="password" password="true" class="password"/>
+            <text class="forget">找回密码</text>
+        </view>
+        <button form-type="submit">login</button>
+        <text>register</text>
+    </form>
+    <view class="other">
+    <view>第三方登录</view>
+        <image src="../../img/weixin.png" bindtap="weixinLogin"/>
+        <image src="../../img/qq.png"/>
+        <image src="../../img/weibo.png"/>        
+    </view>
+</view>

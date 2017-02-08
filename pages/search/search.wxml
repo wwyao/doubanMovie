@@ -1,0 +1,33 @@
+<view class="container">
+    <view class="header">
+        <view id="searchBox">
+            <icon type="search" size="16" color="#38A4F3"/>
+            <input type="text" placeholder="{{placeholder}}" placeholder-class="search-placeholder" bindblur="inputTextChange"/>
+        </view>
+        <view id="genres">
+            <button size="mini" hover-class="btn-hover" id="{{btn1}}" bindtap="btnClick">动作</button>
+            <button size="mini" hover-class="btn-hover" id="{{btn2}}" bindtap="btnClick">喜剧</button>
+            <button size="mini" hover-class="btn-hover" id="{{btn3}}" bindtap="btnClick">爱情</button>
+            <button size="mini" hover-class="btn-hover" id="{{btn4}}" bindtap="btnClick">科幻</button>
+            <button size="mini" hover-class="btn-hover" id="{{btn5}}" bindtap="btnClick">悬疑</button>
+            <button size="mini" hover-class="btn-hover" id="{{btn6}}" bindtap="btnClick">恐怖</button>
+            <button size="mini" hover-class="btn-hover" id="{{btn7}}" bindtap="btnClick">剧情</button>
+            <button size="mini" hover-class="btn-hover" id="{{btn8}}" bindtap="btnClick">犯罪</button>        
+        </view>
+    </view>
+    <view class="result">
+        <block wx:for="{{searchResult}}">
+            <view class="list-item" id="{{item.id}}" bindtap="itemClick">
+                <image src="{{item.imgSrc}}"/>
+                <text >{{item.title}}</text>
+                <text >年份：{{item.year}}</text>
+                <text >类型：{{item.genres}}</text>
+                <text >主演：{{item.actor}}</text>
+                <view class="score">
+                <text>豆瓣评分</text>
+                <text>{{item.score}}</text>      
+                </view>  
+            </view>
+        </block>
+    </view>
+</view>

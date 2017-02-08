@@ -1,0 +1,14 @@
+<view class="container">
+    <view class="user-info">
+        <image src="{{userinfo.avatarUrl}}"></image>
+        <!--<image src="../../img/nav2.png"></image>        -->
+        <view>{{userinfo.nickName}}</view>
+    </view>
+    <view class="content">
+        <view class="collect" bindtap="clickFunction" id="{{collect}}">收藏</view>
+        <view class="collect" bindtap="clickFunction">收藏</view>
+        <view class="collect" bindtap="clickFunction">收藏</view>
+        <view class="collect" bindtap="clickFunction">收藏</view>
+        <view class="collect" bindtap="clickFunction">收藏</view>
+    </view>
+</view>

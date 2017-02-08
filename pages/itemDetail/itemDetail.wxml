@@ -1,0 +1,41 @@
+<view class="container">
+    <view class="top-img">
+        <image src="{{movieImg}}"/>
+        <image src="{{collectImg}}" class="collect" bindtap="clickFunction"/>      
+    </view>
+    <view class="middle-msg">
+        <view class="title">{{title}}</view>
+        <view>年份：{{year}}</view>
+        <view>类型：{{movietype}}</view>
+        <view>产地：{{country}}</view>
+        <view>原名：{{originName}}</view> 
+        <view class="rate">
+        <text>{{rate}}</text>
+        <text>{{ratePeople}}</text>        
+        </view>  
+    </view>  
+    <view class="summary">
+        <text>简介</text>
+        <view>{{summary}}</view>
+    </view>  
+
+    <view class="directors">
+        <view>导演</view>
+        <block wx:for="{{directors}}">
+            <view class="director-item">
+                <view><image src="{{item.img}}"/></view>
+                <text>{{item.name}}</text>
+            </view>
+        </block>
+       
+    </view>
+    <view class="actors">
+        <view>演员</view>
+        <block wx:for="{{actors}}">
+            <view class="actor-item">
+                <view><image src="{{item.img}}"/></view>
+                <text>{{item.name}}</text>
+            </view>
+        </block>
+    </view>
+</view>
